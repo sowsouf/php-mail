@@ -7,7 +7,7 @@ First of all, add this in composer.json
     ...
     "ssf/php-mail": {
         "type": "vcs",
-        "url": ""
+        "url": "git@github.com:sowsouf/php-mail.git"
     },
     "ssf/php-support": {
         "type" : "vcs",

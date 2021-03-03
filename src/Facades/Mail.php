@@ -27,7 +27,7 @@ class Mail
      * @param null $to
      * @return Mailer
      */
-    public static function create($from = null, $to = null)
+    public static function create($to = null, $from = null)
     {
         $message = new Message();
         $message->setTo($to ?? ssfmail_env('MAIL_TO'))
