@@ -1,50 +1,51 @@
 {
-  "name"              : "ssf/php-mail",
-  "description"       : "A library for send mail",
-  "type"              : "library",
-  "license"           : "MIT",
-  "require"           : {
-    "php": "^7.2",
-    "ssf/php-support": "0.0.8",
-    "swiftmailer/swiftmailer": "^6.2"
-  },
-  "require-dev"       : {
-    "phpunit/phpunit" : "^9.5"
-  },
-  "autoload"          : {
-    "psr-4"    : {
-      "Ssf\\Mail\\" : "src/"
+    "name": "ssf/php-mail",
+    "description": "A library for send mail",
+    "type": "library",
+    "license": "MIT",
+    "require": {
+        "php": "^7.2",
+        "ssf/php-support": "0.0.8",
+        "swiftmailer/swiftmailer": "^6.2"
     },
-    "files"    : [
-      "src/Tools/helpers.php"
+    "require-dev": {
+        "phpunit/phpunit": "^9.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "Ssf\\Mail\\": "src/"
+        },
+        "files": [
+            "src/Tools/helpers.php"
+        ],
+        "classmap": [
+            "tests/"
+        ]
+    },
+    "time": "2021-03-03",
+    "authors": [
+        {
+            "name": "Sofiane Akbly",
+            "email": "sofiane.akbly@gmail.com",
+            "homepage": "https://sofianeakbly.fr",
+            "role": "Developer"
+        }
     ],
-    "classmap" : [
-      "tests/"
-    ]
-  },
-  "time"              : "2021-03-02",
-  "authors"           : [
-    {
-      "name"     : "Sofiane Akbly",
-      "email"    : "sofiane.akbly@gmail.com",
-      "homepage" : "https://sofianeakbly.fr",
-      "role"     : "Developer"
-    }
-  ],
-  "support"           : {
-    "email" : "sofiane.akbly@gmail.com"
-  },
-  "minimum-stability" : "stable",
-  "prefer-stable"     : true,
-  "config"            : {
-    "preferred-install"   : "dist",
-    "sort-packages"       : true,
-    "optimize-autoloader" : true
-  },
-  "repositories"      : {
-    "ssf/php-support" : {
-      "type" : "vcs",
-      "url"  : "git@github.com:sowsouf/php-support.git"
-    }
-  }
+    "support": {
+        "email": "sofiane.akbly@gmail.com"
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true,
+    "config": {
+        "preferred-install": "dist",
+        "sort-packages": true,
+        "optimize-autoloader": true
+    },
+    "repositories": {
+        "ssf/php-support": {
+            "type": "vcs",
+            "url": "git@github.com:sowsouf/php-support.git"
+        }
+    },
+    "version": "0.0.1"
 }
