@@ -68,13 +68,13 @@ class Mailer
 
     /**
      * @param string $content
-     * @param string $subject
+     * @param string|null $subject
      * @param Message|null $message
      * @return bool
      * @throws NullMessageException
      * @throws Throwable
      */
-    public function html(string $content, string $subject, Message $message = null)
+    public function html(string $content, string $subject = null, Message $message = null)
     {
         if (($this->message = $this->message ?? $message) === null)
             throw new NullMessageException();
