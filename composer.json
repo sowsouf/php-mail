@@ -5,7 +5,7 @@
     "license": "MIT",
     "require": {
         "php": "^7.2",
-        "ssf/php-support": "0.0.8",
+        "ssf/php-support": "^0.0.9-beta1",
         "swiftmailer/swiftmailer": "^6.2"
     },
     "require-dev": {
@@ -47,5 +47,5 @@
             "url": "git@github.com:sowsouf/php-support.git"
         }
     },
-    "version": "0.0.1-beta2"
+    "version": "0.0.1-beta3"
 }
